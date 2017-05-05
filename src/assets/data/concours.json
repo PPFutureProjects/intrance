@@ -1,0 +1,346 @@
+[
+{
+ "id":1,
+ "nom":"Polytechnique de Yaoundé",
+ "ecole":"Ecole Nationnale Supérieur polytechnique",
+ "abreviation":"ensp",
+ "niveau":"1", 
+ "session":"Juillet 2017",
+ "descriptionEcole":"Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur. Cras   mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper",
+ "descriptionConcours":"odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur. Cras   mattis consectetur purus sit amet fermentum.",
+ "dateConcours":1232564411121,
+ "nombrePlace":15,
+ "dateDossier":154255666333,
+ "contact":"ecole@gmail.com",
+ "lien":"www.comm.fr",
+ "image":"",
+ "abonnement":{"startDate":12115475522},
+ "matieres":[
+{
+    "id":1,
+    "titre":"Mathematiques generales",
+     "description":"Cette matiere ....description",
+     "poids":40,
+     "categorie":"prepa",
+     "concours":{"id":1},
+     "parties":[
+{ "id":1,
+ "titre":"Mathematique generale partie 0",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, ......",
+  "objectifs":[
+           {"id":1,"titre": "Approche de démonstration"},
+           {"id":2,"titre":"Utilisation des propiétés"},
+           {"id":3,"titre":"Logique des prédicats"}         
+  ],
+  "matiere":{"id":1}
+  
+},
+
+{ "id":2,
+ "titre":"Suites numérques et notion de convergeance",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[
+           {"id":4,"titre": "Suites géometriques"},
+           {"id":5,"titre":"Suite divergeantes"},
+           {"id":6,"titre":"Demontrer qu'une suite est convergeante"}         
+  ],
+  "matiere":{"id":1}
+
+}
+,
+{ "id":3,
+ "titre":"Etude des Fonctions ",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[
+           {"id":7,"titre": "Determiner une derivee"},
+           {"id":8,"titre":"Calcul de la limite en x0"},
+           {"id":10,"titre":"Construire un Tableau de variation"},
+           {"id":9,"titre":"Representer la courbe"}         
+  ],
+  "matiere":{"id":1}
+},
+{ "id":4,
+ "titre":"Primitives et Integrales",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[
+           {"id":11,"titre": "Determiner la primitive d'une fonction"},
+           {"id":12,"titre":"Calcul d'integrale dans une borne [d,b]"},
+           {"id":13,"titre":"Les techniques d'integration"}        
+  ],
+  "matiere":{"id":1}
+   }
+     ]
+   }
+,
+ {
+    "id":2,
+    "titre":"Sciences Physique",
+     "description":"Cette matiere ....description",
+     "poids":70,
+     "categorie":"prepa",
+     "concours":{"id":1},
+     "parties":[
+         
+     ]
+}, 
+ {
+    "id":3,
+    "titre":"Sciences Physique Juillet 2007",
+     "description":"Cette matiere ....description",
+     "poids":70,
+     "categorie":"epreuve",
+     "concours":{"id":1},
+     "parties":[
+         
+     ]
+} 
+, 
+ {
+    "id":4,
+    "titre":"Sciences Physique Juillet 2008",
+     "description":"Cette matiere ....description",
+     "poids":70,
+     "categorie":"epreuve",
+     "concours":{"id":1},
+     "parties":[
+        { "id":8,
+ "titre":"Sciences Physique Juillet 2008 part 1",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[],
+  "matiere":{"id":4}
+} 
+
+,
+{ "id":9,
+ "titre":"Sciences Physique Juillet 2008 part 2",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[],
+  "matiere":{"id":4}
+}  
+     ]
+} , 
+ {
+    "id":5,
+    "titre":"Mathematique Juillet 2008",
+     "description":"Cette matiere ....description",
+     "poids":70,
+     "categorie":"epreuve",
+     "concours":{"id":1},
+     "parties":[
+      { "id":10,
+ "titre":"Mathematique Juillet 2008 part 1",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[],
+  "matiere":{"id":5}
+}
+
+,
+{ "id":11,
+ "titre":"Mathematique Juillet 2008 part 2",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[],
+  "matiere":{"id":5}
+} 
+
+,
+{ "id":12,
+ "titre":"Mathematique Juillet 2008 part 3",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[],
+  "matiere":{"id":5}
+}   
+     ]
+}
+ ]
+ },
+
+{
+ "id":2,
+ "nom":"ENS Youndé/Mathemtique",
+ "ecole":"Ecole Normale Supérieur de Yaoundé",
+ "abreviation":"ens",
+"niveau":"1", 
+ "session":"Juillet 2017",
+ "descriptionEcole":"Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur. Cras   mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper",
+ "descriptionConcours":"odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur. Cras   mattis consectetur purus sit amet fermentum.",
+ "dateConcours":1232564411121,
+ "nombrePlace":15,
+ "dateDossier":154255666333,
+ "contact":"ecole@gmail.com",
+ "lien":"www.comm.fr",
+ "image":"",
+ "matieres":[
+     
+ ]
+ },
+
+{
+ "id":3,
+ "nom":"ENS Youndé/Informatique",
+ "ecole":"Ecole Normale Supérieur de Yaoundé",
+ "abreviation":"ens",
+ "niveau":"1", 
+ "session":"Juillet 2017",
+ "descriptionEcole":"Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur. Cras   mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper",
+ "descriptionConcours":"odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur. Cras   mattis consectetur purus sit amet fermentum.",
+ "dateConcours":1232564411121,
+ "nombrePlace":15,
+ "dateDossier":154255666333,
+ "contact":"ecole@gmail.com",
+ "lien":"www.comm.fr",
+ "image":"",
+ "matieres":[
+   
+ ]
+ },
+
+{
+ "id":4,
+ "nom":"ENS Bambili/Physique",
+ "ecole":"Ecole Normale Supérieur de Yaoundé",
+ "niveau":"1", 
+ "abreviation":"ens",
+ "session":"Juillet 2017",
+ "descriptionEcole":"Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur. Cras   mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper",
+ "descriptionConcours":"odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur. Cras   mattis consectetur purus sit amet fermentum.",
+ "dateConcours":1232564411121,
+ "nombrePlace":15,
+ "dateDossier":154255666333,
+ "contact":"ecole@gmail.com",
+ "lien":"www.comm.fr",
+ "image":"",
+ "matieres":[
+     
+ ]
+ }, 
+{
+ "id":5,
+ "nom":"Faculte de medecine",
+ "ecole":"Faculte de medecine et de Science Biomedicale",
+ "abreviation":"fmsb",
+ "niveau":"1", 
+ "session":"Juillet 2017",
+ "descriptionEcole":"Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur. Cras   mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper",
+ "descriptionConcours":"odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur. Cras   mattis consectetur purus sit amet fermentum.",
+ "dateConcours":1232564411121,
+ "nombrePlace":15,
+ "dateDossier":154255666333,
+ "contact":"ecole@gmail.com",
+ "lien":"www.comm.fr",
+ "abonnement":{"startDate":12115475522},
+ "image":"",
+ "matieres":[
+   {
+    "id":6,
+    "titre":"Chimie organique ",
+     "description":"Cette matiere ....description",
+     "poids":70,
+     "categorie":"prepa",
+     "concours":{"id":5},
+     "parties":[
+    { "id":5,
+ "titre":"Liaisons moleculaires",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[
+           {"id":14,"titre": "Notion de liaison entre molecules"},
+           {"id":15,"titre":"Equations chimiques"},
+           {"id":16,"titre":"Nomenclature"}        
+  ],
+  "matiere":{"id":6}
+} 
+,
+{ "id":6,
+ "titre":"Réaction chimique et énergie",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[
+           {"id":14,"titre": "Influence de la temperature"},
+           {"id":15,"titre":"Forme d'energie"},
+           {"id":16,"titre":"Connaissances génerales"}        
+  ],
+  "matiere":{"id":6}
+}
+
+,
+{ "id":7,
+ "titre":"Le carbone 14 et ses appliactions",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[
+           {"id":17,"titre": "Datation au carbone 14"},
+           {"id":18,"titre":"Dégradation chimiaue"}
+                
+  ],
+  "matiere":{"id":6}
+}     
+  ]
+}, 
+ {
+    "id":7,
+    "titre":"Biologie des reignes animales ",
+     "description":"Cette matiere ....description",
+     "poids":70,
+     "categorie":"prepa",
+     "concours":{"id":5},
+     "parties":[
+  { "id":13,
+ "titre":"Biologie des reignes animales part 1",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[
+           {"id":19,"titre": "Notion elenetaires"},
+           {"id":20,"titre":"Définition et concepts"}
+                
+  ],
+  "matiere":{"id":7}
+}
+,
+{ "id":14,
+ "titre":"Biologie des reignes animales part 1",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[
+           {"id":21,"titre": "Notion avancees"},
+           {"id":22,"titre":"Etude et interpretation"},
+           {"id":23,"titre":"Reigne animale"}
+                
+  ],
+  "matiere":{"id":7}
+}         
+     ]
+} 
+, 
+ {
+    "id":8,
+    "titre":"Expression francaise ",
+     "description":"Cette matiere ....description",
+     "poids":70,
+     "categorie":"prepa",
+     "concours":{"id":5},
+     "parties":[
+         
+     ]
+}, 
+ {
+    "id":9,
+    "titre":"Biologie des reignes juin 2008 ",
+     "description":"Cette matiere ....description",
+     "poids":70,
+     "categorie":"epreuve",
+     "concours":{"id":5},
+     "parties":[
+         
+     ]
+},
+
+ {
+    "id":10,
+    "titre":"Biologie des reignes juin 2009 ",
+     "description":"Cette matiere ....description",
+     "poids":70,
+     "categorie":"epreuve",
+     "concours":{"id":5},
+     "parties":[
+         
+     ]
+}    
+ ]
+ } 
+
+]

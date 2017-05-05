@@ -1,0 +1,7 @@
+<ion-item text-center class="non-connexion"  text-wrap  no-lines [hidden]="connected">
+  <span item-left><ion-icon color="white" name="ios-alert-outline"></ion-icon></span>
+  <p class="non-connection">Il semble que votre connexion à internet ne fonctionne pas correctement.</p>
+  <button ion-button item-right small clear icon-only  (click)="connected=true" item-right> 
+  <ion-icon color="white" name="ios-close"></ion-icon>
+</button>
+</ion-item>

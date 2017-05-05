@@ -1,0 +1,25 @@
+<!-- logged in menu -->
+<ion-menu id="loggedInMenu" [content]="content" >
+<ion-header no-shadow no-border> 
+  <ion-navbar>  
+    <ion-title>Menu</ion-title>
+    </ion-navbar>
+</ion-header>
+  <ion-content class="menu">
+
+ <ion-list inset text-right  >
+     <ion-item *ngFor="let p of appPages"   (click)="openPage(p)"class="item-menu" >
+       <ion-icon item-right [name]="p.icon"></ion-icon>
+       <span >{{p.title}}</span>
+     </ion-item>  
+      <ion-item   (click)="openSettingPage(p)" class="item-menu">
+       <ion-icon item-right name="options"></ion-icon>
+       <span >Mon compte</span>
+     </ion-item>      
+
+  </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

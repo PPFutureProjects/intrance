@@ -1,0 +1,225 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+  a {
+     text-align: center;
+     color: #e0e0e0;
+     small {
+      color: #e0e0e0;
+    }
+  } 
+   .item-menu {
+    text-align: right;
+    background-color: transparent;
+    border: none !important;
+   color: white;  
+   :hover{
+      background-color: transparent;
+
+   }
+   :focus{
+      background-color: transparent;
+   }
+  }
+   .menu {
+     color: white;;
+     background-color:  map-get($colors, primary);
+     text-align: right;
+  }
+
+
+ .menu-flat{
+    width: 100%;
+    text-align: center;
+     background-color: map-get($colors, primary);
+   .span-value{
+        height: 58px;
+        width: 58px;
+        border-radius: 12px;
+        display:  inline-block;
+        margin: 5%;
+         font-size: 2.6em;
+       // padding-top: 12%;
+         color:  white;
+         background-color: transparent;
+         border: 3px  solid white;
+    }
+     .span-title{
+        width: 64px;
+        font-size: 0.9em;
+         display:  inline-block;
+         margin: 1px;
+         padding-top: 1%;
+        color: white;
+         font-weight: bold;
+    }
+
+
+}
+
+  .menu-flat-lg{
+      height:54%;
+  //     top:244px;
+    
+    }
+
+    .action-description{
+       text-align: left;
+       width: 100%;
+       padding-left: 4%;
+       padding-right: 4%;
+       color:  #7F7F7F;
+         p{
+            font-size: 1.1em;
+            padding-top: 2px;
+           // height: 8.1rem;  
+       } 
+       .action-icon {
+           display: inline-block;
+           text-align: center;
+           height: 72px;
+           width: 72px;
+           font-size: 3.0em;
+           color:#7F7F7F;
+           border:3px solid  #7F7F7F;
+           border-radius: 15%;
+       }  
+       img {
+           display: inline-block;
+           border-radius: 6px;
+           height: 72px;
+           width: 72px;
+      } 
+ 
+    
+    }  
+     .article-title{
+        width: 100%;
+        background-color: color($colors,primary-clear);
+        margin-top:0px;
+        padding: 5px 21px;
+        height: 17%;
+        .action-icon {
+              display: inline-block;
+              text-align: center;
+              height: 60px;
+              width: 60px;
+              font-size: 2.5em;
+              color:#fff;
+              padding:1px;
+              border:3px solid  #fff;
+              border-radius: 15%;
+       } 
+         p{
+            font-size: 1.1em;
+            padding-top: 2px;
+            color:#fff; 
+       } 
+        h3{
+         color:#fff;
+         font-weight: bold;
+         font-size: 1.2em;
+        }
+         h2{
+         color:#fff;
+         font-weight: normal;
+         font-size: 1.4em;
+        }   
+    }
+    .dasboard{
+      background-color:  map-get($colors, light);
+      // box-shadow: 0 3px 4px 0px map-get($colors, primary);;
+      display: inline-block;
+      text-align: center;
+      width: 94%;
+      min-height:18%;
+      border-radius: 12px;
+      margin-left: 3%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-right: 3%;
+    .ion-col{
+       text-align: center;
+       font-size: 1.0em;
+     
+     }
+ .see-details{
+    background-color: transparent;
+ }
+   .span-value{
+        height: 58px;
+        width: 58px;
+        border-radius: 12px;
+        display:  inline-block;
+        font-weight: normal;
+        padding-top: 15%;
+        color:  map-get($colors, primary);
+        border: 3px  solid map-get($colors, primary);
+    }
+     .span-title{
+         width: 85%;
+         text-align: center;
+         font-size: 1.0em;
+         display:  inline-block;
+         padding-top: 1%;
+         color:  map-get($colors, primary);
+    }
+  
+}
+ .empty-text{
+            font-size: 1.8em;
+            color:  #7F7F7F;
+            padding-top: 10%;
+      }
+
+.non-connexion{
+   background-color: map-get($colors, danger);
+    position:absolute;
+    top:0px;
+     width: 100%;
+        // border-radius: 12px;
+       height :33px;
+       p,span{
+    color:  map-get($colors, white);
+    font-size: 0.9em;
+       } 
+       span{
+       
+          font-size: 2.0em;
+       }
+} 
+
+
+.borded-list-item {
+ .none,.success,.warning,.danger{
+  margin-top: 2px;   
+  padding-left: 8px;
+  }
+
+ }
+ .none{
+   border-left: 5px solid color($colors, primary);
+ }
+ .success{
+     border-left: 5px solid color($colors, secondary);
+ }
+  .warning{
+     border-left: 5px solid color($colors, orange);
+ }
+  .danger{
+    border-left: 5px solid color($colors, danger);
+ }
+ 

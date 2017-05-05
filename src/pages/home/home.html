@@ -1,0 +1,65 @@
+
+<ion-header no-border no-shadow >
+  <ion-navbar>
+     <button menuToggle ion-button icon-only>
+      <ion-icon name="menu"></ion-icon>
+    </button>  
+    <ion-title>Acceuil</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content >
+<div class="article-title"  ion-item no-lines (click)="showOptions()"  *ngIf="concours"  >
+  <h3> {{concours.nom}}</h3>
+  <div class="action-icon"  item-left><span><ion-icon name="md-school"></ion-icon></span></div> 
+   <a > {{concours.ecole}}</a>
+</div>  
+<div class="dasboard " ion-item no-lines text-wrap>
+  <ion-row *ngIf="concours">
+     <ion-col> 
+       <span class="span-value">{{toFixed(analyse.programme)}}%</span>
+       <br>
+       <span class="span-title">Programme réalisé</span>
+     </ion-col>
+    <ion-col>
+       <span class="span-value" >{{toFixed(analyse.objectif)}}%</span>
+       <br>
+       <span class="span-title">Objectifs assimilés</span>
+    </ion-col>
+    <ion-col> 
+      <span class="span-value">JJ-{{analyse.jourJ}}</span>
+      <br>
+      <span class="span-title">Date du concours</span>
+    </ion-col>
+  </ion-row> 
+<div ion-item no-lines class="see-details">
+<button ion-button align-right small clear icon-right *ngIf="concours" (click)="showDetails()" item-right> Détails
+  <ion-icon name="ios-arrow-dropright"></ion-icon>
+</button>
+<button ion-button  small clear icon-right *ngIf="!concours" (click)="openProgramme()" item-right> 
+  Programmes <ion-icon name="ios-arrow-dropright"></ion-icon>
+  </button>
+</div>
+</div>
+<div class="empty-text" *ngIf="!concours" ion-item no-lines text-wrap>
+<p  >Vous ne vous êtes pas encore inscrit à un  programme.</p>
+</div>
+<div class="menu-flat menu-flat-lg">
+ <ion-searchbar  (ionInput)="openSearch()" [(ngModel)]="queryText" placeholder="Rechercher un concours" > </ion-searchbar>
+  <ion-grid>
+      <ion-row wrap>
+     <ion-col width-33 *ngFor="let p of appPages"> 
+       <button class="span-value" only-icon (click)="openPage(p)"><ion-icon [name]="p.icon"></ion-icon></button>
+       <br>
+       <span class="span-title">{{p.title}}</span>
+     </ion-col>
+     <ion-col width-33 > 
+       <button class="span-value" only-icon (click)="openSettingPage()"><ion-icon name="options"></ion-icon></button>
+       <br>
+       <span class="span-title">Options</span>
+     </ion-col>
+     </ion-row>
+     </ion-grid>      
+</div>
+<flash-card></flash-card>  
+</ion-content>
+<!--<page-tutorial></page-tutorial>-->

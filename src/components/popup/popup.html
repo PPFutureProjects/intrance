@@ -1,0 +1,35 @@
+
+<div  no-lines [hidden]="isClosed ||!option" class="popup-top" ion-item no-lines text-wrap>
+  <div  *ngIf="option=='explication'" >
+    <ion-note color="primary">Explication de la réponse</ion-note>
+    <p *ngIf="question.explication">{{question.explication}}</p>
+    <p *ngIf="!question.explication">Aucune explication.</p>
+  </div>
+
+<div  *ngIf="option=='hint'" >
+  <ion-note color="primary">Indice de réponse</ion-note>
+    <p *ngIf="question.hint">{{question.hint}}</p>
+    <p *ngIf="!question.hint">Aucune indication de réponse.</p>
+  </div> 
+<div *ngIf="option=='stats'" >
+  <ion-note color="primary">Cette question a été posée</ion-note>
+  <p *ngIf="question.historique">{{question.historique}}</p>
+  <p *ngIf="!question.historique">Aucun historique.</p>
+  <br>
+  <ion-note color="primary">Statistiques</ion-note>
+  <p *ngIf="question.probabilite">{{question.probabilite}}%  echouent à la question  la première fois.</p>
+   <p *ngIf="!question.probabilite">Aucune donnée</p>
+  </div> 
+<div *ngIf="option=='submit'" >
+  <p *ngIf="question.dificle>0">{{question.dificle}}% de gens trouvent  cette question dificile. Comment la trouvez-vous ?</p>
+  <p *ngIf="!question.dificle">Comment trouvez-vous cette question ?</p>
+  <br>
+   <button ion-button (click)=" submit()"icon-right  small>
+        <span >Elle est dificile  </span> <ion-icon name="bug"></ion-icon>
+    </button>
+  </div> 
+ <button ion-button item-right clear icon-only color="danger"  (click)="option=null" item-right> 
+  <ion-icon  name="close"></ion-icon>
+</button>
+</div>
+

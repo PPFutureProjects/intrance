@@ -1,0 +1,22 @@
+page-historique {
+    .sample-modal-page {
+    position: absolute;
+    overflow: hidden;
+    border-radius:1px;
+    top: 70%;
+    display: block;
+    width: 100%;
+    height: 30%;
+    margin: 0px;
+    border: 0;
+    box-shadow: 0 15px 16px 20px rgba(0,0,0,.4);
+    div{
+      margin-left:3%;
+      margin-right: 3%;       
+    }
+    
+ ion-buttons{
+     padding-bottom: 0px;
+     }
+    }
+}

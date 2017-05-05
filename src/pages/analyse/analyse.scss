@@ -1,0 +1,28 @@
+page-analyse {
+.sample-modal-page1 {
+    position: absolute;
+    overflow: hidden;
+    border-radius:1px;
+    left: 15%;
+    top: 57px;
+    display: block;
+    width: 85%;
+    height: 100%;
+    margin: 0px;
+    border: 0;
+    box-shadow: 0 15px 16px 20px rgba(0,0,0,.4);
+  div{
+      margin-left:3%;
+      margin-right: 3%;       
+    }
+.ion-row-footer {
+ bottom:12%; 
+ position: absolute;  
+ }    
+.ion-row-header {
+ top: 40%; 
+ position: absolute;  
+ }
+    
+}
+}

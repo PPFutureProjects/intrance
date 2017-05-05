@@ -1,0 +1,48 @@
+page-login {
+
+
+  form {
+    margin-bottom: 10px;
+    align-items: center;
+   
+   
+    button {
+      margin-top: 5px;
+    }
+  }
+
+  p {
+    font-size: 1.0em;
+    color: #7F7F7F;
+  }
+
+  ion-label {
+    margin: 5px;
+  }
+
+  ion-input {
+    line-height: 1.1em;
+    padding: 5px; 
+    color: #7F7F7F;
+  }
+
+  .invalid {
+    color: #FF6153;
+  }
+
+  .error-message .item-inner {
+    border-bottom: 0 !important;
+  }
+
+  .facebook-btn {
+    color: #fff;
+   
+  }
+
+  .google-btn {
+    color: #fff;
+    
+  }
+
+
+}

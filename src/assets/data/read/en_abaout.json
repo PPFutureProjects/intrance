@@ -1,0 +1,35 @@
+
+  {
+    "titre": "le titre de l'app",
+    "description": "description",
+    "imageUrl": "urlImage",
+    "appVersion": "appVersion",
+    "contact": {
+        "telephone":"00237694210203", 
+        "email":"support@etrust:com",
+         "whatsapp":"+237694210203"},
+    "communautes": [
+      {
+        "titre": "Nous suivre sur facebook",
+        "link": "page facebool ",
+        "icon": "facebook"
+      },
+        {
+        "titre": "Nous suivre sur twitter",
+        "link": "page twitter ",
+        "icon": "twitter"
+      },
+
+       {
+        "titre": "Nous suivre sur yotube",
+        "link": "page youtube ",
+        "icon": "youtube"
+      },
+       {
+        "titre": "Nous suivre sur yotube",
+        "link": "page youtube ",
+        "icon": "web"
+      }
+
+    ]
+  }

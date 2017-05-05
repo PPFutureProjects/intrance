@@ -1,0 +1,89 @@
+<ion-header >
+  <ion-navbar>
+    <p  *ngIf="!matiere && partie">{{partie.titre}}</p>
+    <p  *ngIf="!partie&& matiere">{{matiere.titre}}</p>
+   <ion-buttons end> 
+      <button  ion-button (click)="dismiss()" >
+        <ion-icon name="md-close" showWhen="ios,android,windows"></ion-icon>
+      </button> 
+       <button ion-button (click)="getAnalyse()">
+        <ion-icon name="refresh"></ion-icon>
+     </button>              
+      </ion-buttons>     
+  </ion-navbar>
+</ion-header>
+<ion-content paddind>     
+<ion-list inset *ngIf="!matiere && partie">
+<ion-item text-wrap >
+<p>Note  au premier test</p>
+<ion-note item-right>{{partie.firstNote}}/20</ion-note>
+</ion-item>
+<ion-item text-wrap>
+<p>Note  au dernier test</p>
+<ion-note item-right>{{partie.note}}/20</ion-note>
+</ion-item>
+<ion-item text-wrap>
+Temps de reponse
+<ion-note item-right>{{format(partie.time)}}</ion-note>
+</ion-item>
+  <ion-item text-wrap>
+Validation des objectifs
+<ion-note item-right>{{partie.objectif}}%</ion-note>
+</ion-item>
+<ion-item text-wrap>
+Moyenne generale
+<ion-note *ngIf="partie.analyse" item-right>{{partie.analyse.moyenne}}/20</ion-note>
+<ion-note *ngIf="!partie.analyse"  item-right>--</ion-note>
+</ion-item>
+<ion-item text-wrap>
+Taux de reuissite
+<ion-note *ngIf="partie.analyse" item-right>{{partie.analyse.taux}}%</ion-note>
+<ion-note *ngIf="!partie.analyse"  item-right>--</ion-note>
+</ion-item>
+<ion-item text-wrap>
+ Rang 
+<ion-note *ngIf="partie.analyse" item-right>{{partie.analyse.rang}} ieme /{{partie.analyse.nombre}}</ion-note>
+<ion-note *ngIf="!partie.analyse"  item-right>--</ion-note>
+</ion-item>
+
+</ion-list>
+
+<ion-list inset *ngIf="!partie&& matiere">
+
+<ion-item text-wrap>
+<p>Ma moyenne</p>
+<ion-note item-right>{{matiere.note}}/20</ion-note>
+</ion-item>
+<ion-item text-wrap>
+Couverture du programme
+<ion-note item-right>{{matiere.programme}}%</ion-note>
+</ion-item>
+<ion-item text-wrap>
+Validation des objectifs
+<ion-note item-right>{{matiere.objectif}}%</ion-note>
+</ion-item>
+
+<ion-item text-wrap>
+Moyenne generale 
+<ion-note *ngIf="matiere.analyse" item-right>{{matiere.analyse.moyenne}}/20</ion-note>
+<ion-note *ngIf="!matiere.analyse"  item-right>--</ion-note>
+</ion-item>
+<ion-item text-wrap>
+Taux de reuissite
+<ion-note *ngIf="matiere.analyse" item-right>{{matiere.analyse.taux}}%</ion-note>
+<ion-note *ngIf="!matiere.analyse"  item-right>--</ion-note>
+</ion-item>
+<ion-item text-wrap>
+Mon rang 
+<ion-note *ngIf="matiere.analyse" item-right>{{matiere.analyse.rang}} ieme /{{matiere.analyse.nombre}}</ion-note>
+<ion-note *ngIf="!matiere.analyse"  item-right>--</ion-note>
+</ion-item>
+</ion-list> 
+<div padding>
+<button ion-button block color="danger" (click)="dismiss()" outline small >
+ <span>Fermer</span>
+</button>     
+</div>
+ <br> 
+</ion-content>
+

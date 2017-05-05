@@ -1,0 +1,19 @@
+
+<ion-header no-border no-shadow>
+  <ion-navbar>
+     <button menuToggle ion-button icon-only>
+      <ion-icon name="menu"></ion-icon>
+    </button>  
+       <ion-title>Programmes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content >
+  <ion-searchbar color="primary"
+                   [(ngModel)]="queryText"
+                    (ionInput)="search()"
+                   placeholder="Rechercher un concours">
+    </ion-searchbar>   
+<concours-list [concoursList]="_concours" ></concours-list>
+<flash-card></flash-card>  
+</ion-content>

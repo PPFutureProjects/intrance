@@ -1,0 +1,118 @@
+
+<ion-header no-shadow>
+  <ion-navbar>
+      <ion-buttons end>
+      <button ion-button (click)="dismiss()">
+        <span color="primary" showWhen="ios">Annuler</span>
+        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+      </button>
+    </ion-buttons>   
+    <ion-title>Payement</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content no-bounce padding>
+ <form #payementProcessForm="ngForm" novalidate *ngIf="entity">  
+   <ion-list>  
+<ion-item  no-lines >
+       <ion-segment name="mode" [(ngModel)]="entity.payementProcess.mode" (ngModelChange)="goToFirst()" no-borders>
+            <ion-segment-button value="orange-money">
+               Orange Money
+            </ion-segment-button>
+            <ion-segment-button  value="mtn-mobile-money">
+                MTN Mobile Money
+            </ion-segment-button>
+        </ion-segment>
+ </ion-item>
+    <section *ngIf="entity.payementProcess.mode =='orange-money'">
+        <ion-list>
+        <div class="logo" >
+          <img src="assets/images/logo-orange-money.png">
+        </div>
+      <div ion-item *ngIf="stape=='first'">
+          <ion-label floating>Numéro de mobile</ion-label>
+          <ion-input [(ngModel)]="entity.payementProcess.orangeMobileTel" type="tel" name="orangeMobileTel"></ion-input>
+      </div>
+      <div ion-item no-lines text-wrap *ngIf="stape=='first'"  >
+         <p>Saisir le numéro de mobile avec lequel vous souhaitez faire votre payement.</p>
+      </div>
+     
+      <div ion-item *ngIf="stape=='second'">
+          <ion-label floating>ID de transaction</ion-label>
+          <ion-input [disabled]="entity.payementProcess.confirMsgReceived"  [(ngModel)]="entity.payementProcess.transactionId" type="text" name="transactionId"></ion-input>
+      </div>
+      <div ion-item no-lines text-wrap *ngIf="stape=='second'" >
+         <p>Saisir le numéro de transaction contenu dans le SMS de confirmation.</p>
+      </div>
+        <div ion-item no-lines text-wrap *ngIf="stape=='first'"  >
+         <p>Saisir puis confirmer le code USSD <a href="tel:{{ussd()}}" >{{ussd()}}</a> 
+         ou faire un transfert de {{entity.budget}} FCFA au compte 694210203. </p>
+      </div>  
+        <ion-item text-wrap *ngIf="stape=='second'">
+         <ion-label>Je n'ai pas réçu de SMS de confirmation</ion-label>
+        <ion-checkbox [(ngModel)]="entity.payementProcess.confirMsgReceived" color="danger" name="confirMsgReceived" checked="false" item-right></ion-checkbox>
+        </ion-item>   
+      <ion-row >
+        <ion-col width-50>
+      <button ion-button block color="light"  (click)="goBack()">
+        <span *ngIf="stape=='first'"> Annuler</span>
+          <span *ngIf="stape=='second'"> Retour</span>
+      </button>
+      </ion-col>
+        <ion-col width-50>
+          <button ion-button block  (click)="nextStape()"  class="tangoAnimate quick tangoCentre" [disabled]="isInvalid()">
+           <span *ngIf="stape=='first'"> Continuer</span>
+           <span *ngIf="stape=='second'"> Terminer</span>
+          <ion-spinner [color]="spinnerColor" *ngIf="submitted"></ion-spinner>
+            </button>
+        </ion-col>
+      </ion-row>
+  </ion-list>
+    </section>
+    <section *ngIf="entity.payementProcess.mode=='mtn-mobile-money'">
+        <ion-list>
+           <div class="logo" >
+          <img src="assets/images/logo-mtn-money.png">
+        </div>
+      <div ion-item *ngIf="stape=='first'">
+          <ion-label floating>Numéro de mobile</ion-label>
+          <ion-input [(ngModel)]="entity.payementProcess.mtnMobileTel" type="tel" name="mtnMobileTel"></ion-input>
+      </div>
+       <div ion-item no-lines text-wrap *ngIf="stape=='first'"  >
+         <p>Saisir le numéro de mobile avec lequel vous souhaitez faire votre payement.</p>
+      </div>     
+       <div ion-item no-lines text-wrap *ngIf="stape=='first'"  >
+         <p>Saisir puis confirmer le code USSD <a href="tel:{{ussd()}}" >{{ussd()}}</a> 
+          ou faire un transfert de {{entity.budget}} FCFA au compte 694210203. </p>
+      </div>     
+      <div ion-item *ngIf="stape=='second'">
+          <ion-label floating>ID de transaction</ion-label>
+          <ion-input [disabled]="entity.payementProcess.confirMsgReceived"  [(ngModel)]="entity.payementProcess.transactionId" type="text" name="transactionId"></ion-input>
+      </div>
+      <div ion-item no-lines text-wrap *ngIf="stape=='second'" >
+         <p>Saisir le numéro de transaction contenu dans le SMS de confirmation.</p>
+      </div>
+        <ion-item text-wrap *ngIf="stape=='second'" >
+         <ion-label>Je n'ai pas réçu de SMS de confirmation</ion-label>
+        <ion-checkbox [(ngModel)]="entity.payementProcess.confirmMsgReceived" color="danger" name="confirmMsgReceived" checked="false" item-right></ion-checkbox>
+        </ion-item>   
+      <ion-row >
+        <ion-col width-50>
+      <button ion-button block color="light"  (click)="goBack()">
+        <span *ngIf="stape=='first'"> Annuler</span>
+          <span *ngIf="stape=='second'">Retour</span>
+      </button>
+      </ion-col>
+        <ion-col width-50>
+          <button ion-button block  (click)="nextStape()"  class="tangoAnimate quick tangoCentre" [disabled]="isInvalid()">
+           <span *ngIf="stape=='first'"> Continuer</span>
+           <span *ngIf="stape=='second'"> Terminer</span>
+          <ion-spinner [color]="spinnerColor" *ngIf="submitted"></ion-spinner>
+            </button>
+        </ion-col>
+      </ion-row>
+        </ion-list>
+    </section>
+       
+    </ion-list>     
+</form>
+</ion-content>

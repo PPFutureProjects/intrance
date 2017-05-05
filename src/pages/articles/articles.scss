@@ -1,0 +1,12 @@
+page-articles {
+.articles {
+  padding-left: 1px;
+ .article-item,ion-item{
+ height: 13.1rem;
+ //background-color: #f4f4f2;
+ border-left: 4px solid color($colors, primary);
+ padding-left: 8px;
+ margin-top: 1px;  
+  }
+  } 
+}

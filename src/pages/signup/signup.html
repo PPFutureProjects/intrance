@@ -1,0 +1,61 @@
+<ion-header no-border no-shadow>
+  <ion-navbar color="primary">
+    <ion-title>
+     Créer un compte
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <div  class="action-description"  text-wrap ion-item no-lines>
+     <div class="action-icon"  item-left><span><ion-icon name="ios-keypad-outline"></ion-icon></span></div>
+      <p >
+ Créer un compte afin pour acceder aux programmes de préparation.    
+     </p> 
+  </div >
+  <form [formGroup]="signupForm" (submit)="signupUser()" novalidate padding>
+
+    <ion-item class="input-item">
+      <ion-label stacked></ion-label>
+      <ion-input formControlName="email" type="email" placeholder="Your email address"
+        [class.invalid]="!signupForm.controls.email.valid && signupForm.controls.email.dirty"></ion-input>
+    </ion-item>
+    <ion-item class="error-message" *ngIf="!signupForm.controls.email.valid  && signupForm.controls.email.dirty" text-wrap>
+      <p>Veillez entrer une adresse mail valide.</p>
+    </ion-item>
+
+    <ion-item class="input-item">
+      <ion-label stacked></ion-label>
+      <ion-input formControlName="password" type="password"  placeholder="Your password"
+        [class.invalid]="!signupForm.controls.password.valid && signupForm.controls.password.dirty"></ion-input>
+    </ion-item>
+    <ion-item class="error-message" *ngIf="!signupForm.controls.password.valid  && signupForm.controls.password.dirty" text-wrap>
+      <p>Votre mot de passe doit avoir au moins 06 caractères</p>
+    </ion-item>
+ <br>
+  <ion-row >
+     <ion-col>
+  <button ion-button block  color="light" (click)="dismiss()">
+    Connexion
+  </button>
+  </ion-col>
+  <ion-col>
+    <button ion-button block  type="submit">
+      Créer un compte
+    </button>
+    </ion-col>
+</ion-row>
+
+  <br>
+   <button ion-button block color="facebook"  icon-left class="facebook-btn" (click)="registerUserWithFacebook()">
+    <ion-icon name="logo-facebook"></ion-icon>
+     Continuer avec facebook
+  </button>
+  <button ion-button block color="google"  icon-left class="google-btn" (click)="registerUserWithGoogle()">
+    <ion-icon name="logo-google" ></ion-icon>
+     Continuer avec google
+  </button> 
+   
+  </form>
+
+</ion-content>

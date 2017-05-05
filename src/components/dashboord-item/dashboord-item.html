@@ -1,0 +1,36 @@
+  <div *ngIf="analyse" >
+  <ion-row *ngIf="concours">
+     <ion-col> 
+       <span class="span-value">{{toFixed(analyse.programme)}}%</span>
+       <br>
+       <span class="span-title">Programme réalisé</span>
+     </ion-col>
+    <ion-col>
+       <span class="span-value" >{{toFixed(analyse.objectif)}}%</span>
+       <br>
+       <span class="span-title">Objectifs déjà assimilés</span>
+    </ion-col>
+    <ion-col> 
+      <span class="span-value">JJ-{{analyse.jourJ}}</span>
+      <br>
+      <span class="span-title">Date du concours</span>
+    </ion-col>
+  </ion-row> 
+ <ion-row *ngIf="matiere">
+     <ion-col>
+       <span class="span-value">{{toFixed(analyse.note)}}</span> 
+       <br>
+       <span class="span-title">Moyenne obtenue</span>
+     </ion-col>
+    <ion-col> 
+      <span class="span-value">{{toFixed(analyse.programme)}}%</span>
+      <br>
+      <span class="span-title">Programme déjà couvert</span>
+    </ion-col>
+    <ion-col>
+       <span class="span-value" >{{toFixed(analyse.objectif)}}%</span>
+       <br>
+       <span class="span-title">Objectifs  assimilés</span>
+    </ion-col>	
+  </ion-row> 
+  </div>  

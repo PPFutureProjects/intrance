@@ -1,0 +1,39 @@
+
+<ion-header>
+  <ion-navbar>
+    <p>{{partie.titre}}</p>     
+  </ion-navbar>
+</ion-header>
+<ion-content >
+<div padding>
+ <span class="card-title">Objectifs</span>
+  <p>Cette partie vise à vous évaluer sur:</p>
+ <ion-list *ngIf="partie.objectifs &&  partie.objectifs.length" >
+  <ion-item *ngFor="let objectif of partie.objectifs" text-wrap>
+  <p>{{objectif.titre}}</p>
+  <ion-icon name="checkmark" color="secondary" item-left *ngIf="objectif.done==true"></ion-icon> 
+  <ion-icon name="md-close" color="danger" item-left *ngIf="objectif.done==false"></ion-icon>   
+  </ion-item>
+</ion-list>
+<p *ngIf="!partie.objectifs || ! partie.objectifs.length">
+  Aucun element à afficher.
+</p>
+<span class="card-title">Pré-requis</span>
+<ion-item>
+<p>{{partie.prerequis}}</p>
+</ion-item>
+<br>
+<button ion-button block color="primary" (click)="showAnalyse()" outline small  *ngIf="partie.note">
+ <span>  Voir le tableau de notes</span>
+</button>
+<button ion-button block color="primary" (click)="start()"outline  small>
+ <span *ngIf="partie.note"> Voir les résultats</span>
+  <span *ngIf="!partie.note && !partie.lastIndex"> Debuter l'évaluation</span>
+  <span *ngIf="!partie.note && partie.lastIndex"> Terminer l'évaluation</span>
+ </button>
+<br>
+<button ion-button block (click)="dismiss()" color="danger" outline small >
+ <span>Retour</span>
+</button> 
+ </div>
+</ion-content>

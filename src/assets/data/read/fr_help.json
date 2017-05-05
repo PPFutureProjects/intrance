@@ -1,0 +1,31 @@
+{"textHelps":[
+  {"titre":"titre text",
+    "link":"description text"
+  },
+  {"titre":"titre text",
+    "link":"description text"
+  },
+   {"titre":"titre text",
+    "link":"description text"
+  }   
+ ],
+  "videoHelps":[
+    {"titre":"titre video 1",
+     "description":"description",
+     "link":"youtube link"
+   },
+    {"titre":"titre video 1",
+     "description":"description",
+     "link":"youtube link"
+   },
+
+    {"titre":"titre video 1",
+     "description":"description",
+     "link":"youtube link"
+   },      
+    {"titre":"titre video 1",
+     "description":"description",
+     "link":"youtube link"
+   }
+  ]
+}

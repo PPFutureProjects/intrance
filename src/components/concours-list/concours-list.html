@@ -1,0 +1,19 @@
+<!--
+  Generated template for the ConcoursList component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+
+
+<ion-list *ngIf="concoursList">
+  <ion-item *ngFor="let concours of concoursList" text-wrap (click)="showContenu(concours)" [hidden]="concours.hide">
+    <ion-icon name="lock" item-right *ngIf="!concours.matieres.length||!concours.abonnement"></ion-icon>
+    <ion-thumbnail item-left>
+      <img src="assets/images/fgi.jpg">
+    </ion-thumbnail>
+    {{concours.nom}}
+    <p>{{concours.ecole}} </p>
+    <p><a>{{concours.niveau}} annee</a><a>{{concours.nombrePlace}} places</a></p>
+  </ion-item>   
+</ion-list>

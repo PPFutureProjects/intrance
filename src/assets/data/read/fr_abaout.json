@@ -1,0 +1,14 @@
+
+  {
+    "titre": "Trainings",
+    "description": "est une application pour la préparation aux examens et concours nationnaux et internationnaux. Elle permet aux candidats de mieux organiser leur temps de préparation en opsevant les indicateurs clés et detrminants lors des épreuves écrites.",
+     "societe": "Nous sommes spécialisé dans le developpement des outils higth-tech dans le domaine de l'éducation, de la santé et du social. Notre but est de fournir des solutions moins couteuses et moins contraigniantes.",
+    "imageUrl": "assets/images/read/abaout.png",
+    "appVersion": "1.2.3",
+    "partenaires":[
+      {"nom":"Agence Française de Developpement","image":"assets/images/read/afd.jpg"},
+      {"nom":"UNESCO","image":"assets/images/read/unsesco.png"},
+      {"nom":"Banque Africaine de Developpement","image":"assets/images/read/bad.jpg"},
+      {"nom":"Inteligencia Coorporation","image":"assets/images/read/intelligentsia.jpg"}
+    ]
+  }

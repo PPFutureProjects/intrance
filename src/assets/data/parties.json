@@ -1,0 +1,145 @@
+[
+{ "id":1,
+ "titre":"Mathematique generale partie 0",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, ......",
+  "objectifs":[
+           {"id":1,"titre": "Approche de démonstration"},
+           {"id":2,"titre":"Utilisation des propiétés"},
+           {"id":3,"titre":"Logique des prédicats"}         
+  ],
+  "matiere":{"id":1}
+  
+},
+
+{ "id":2,
+ "titre":"Suites numérques et notion de convergeance",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[
+           {"id":4,"titre": "Suites géometriques"},
+           {"id":5,"titre":"Suite divergeantes"},
+           {"id":6,"titre":"Demontrer qu'une suite est convergeante"}         
+  ],
+  "matiere":{"id":1}
+
+}
+,
+{ "id":3,
+ "titre":"Etude des Fonctions ",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[
+           {"id":7,"titre": "Determiner une derivee"},
+           {"id":8,"titre":"Calcul de la limite en x0"},
+           {"id":10,"titre":"Construire un Tableau de variation"},
+           {"id":9,"titre":"Representer la courbe"}         
+  ],
+  "matiere":{"id":1}
+},
+{ "id":4,
+ "titre":"Primitives et Integrales",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[
+           {"id":11,"titre": "Determiner la primitive d'une fonction"},
+           {"id":12,"titre":"Calcul d'integrale dans une borne [d,b]"},
+           {"id":13,"titre":"Les techniques d'integration"}        
+  ],
+  "matiere":{"id":1}
+} 
+,
+{ "id":5,
+ "titre":"Liaisons moleculaires",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[
+           {"id":14,"titre": "Notion de liaison entre molecules"},
+           {"id":15,"titre":"Equations chimiques"},
+           {"id":16,"titre":"Nomenclature"}        
+  ],
+  "matiere":{"id":6}
+} 
+,
+{ "id":6,
+ "titre":"Réaction chimique et énergie",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[
+           {"id":14,"titre": "Influence de la temperature"},
+           {"id":15,"titre":"Forme d'energie"},
+           {"id":16,"titre":"Connaissances génerales"}        
+  ],
+  "matiere":{"id":6}
+}
+
+,
+{ "id":7,
+ "titre":"Le carbone 14 et ses appliactions",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[
+           {"id":17,"titre": "Datation au carbone 14"},
+           {"id":18,"titre":"Dégradation chimiaue"}
+                
+  ],
+  "matiere":{"id":6}
+}
+
+,
+{ "id":8,
+ "titre":"Sciences Physique Juillet 2008 part 1",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[],
+  "matiere":{"id":4}
+} 
+
+,
+{ "id":9,
+ "titre":"Sciences Physique Juillet 2008 part 2",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[],
+  "matiere":{"id":4}
+} 
+,
+{ "id":10,
+ "titre":"Mathematique Juillet 2008 part 1",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[],
+  "matiere":{"id":5}
+}
+
+,
+{ "id":11,
+ "titre":"Mathematique Juillet 2008 part 2",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[],
+  "matiere":{"id":5}
+} 
+
+,
+{ "id":12,
+ "titre":"Mathematique Juillet 2008 part 3",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[],
+  "matiere":{"id":5}
+} 
+,
+{ "id":13,
+ "titre":"Biologie des reignes animales part 1",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[
+           {"id":19,"titre": "Notion elenetaires"},
+           {"id":20,"titre":"Définition et concepts"}
+                
+  ],
+  "matiere":{"id":7}
+}
+
+,
+{ "id":14,
+ "titre":"Biologie des reignes animales part 1",
+  "prerequis":"Pour répondre efficacement aux questions dans cette partie, vous devez avoir ....",
+  "objectifs":[
+           {"id":21,"titre": "Notion avancees"},
+           {"id":22,"titre":"Etude et interpretation"},
+           {"id":23,"titre":"Reigne animale"}
+                
+  ],
+  "matiere":{"id":7}
+}
+      
+]

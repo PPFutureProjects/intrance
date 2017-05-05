@@ -1,0 +1,38 @@
+
+<ion-header no-border no-shadow>
+  <ion-navbar>
+     <button menuToggle ion-button icon-only>
+      <ion-icon name="menu"></ion-icon>
+    </button>  
+    <ion-title>A propos</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <div class="article-title"  text-wrap ion-item no-lines>
+  <h2>En savoir plus sur nous</h2>  
+  <div class="action-icon"  item-left><span><ion-icon name="ios-information-circle-outline"></ion-icon></span></div>
+  </div> 
+  <div padding *ngIf="abaout" class="about-text ">
+    <div class="logo">
+    <img [src]="abaout.imageUrl" >
+    </div>
+  <p>
+     <strong> {{abaout.titre}}</strong> {{abaout.description}}
+    </p>
+   <p>
+      {{abaout.societe}}
+    </p>    
+ <hr>
+<ion-note>En partenaréat avec </ion-note>   
+<ion-grid>
+<ion-row wrap>
+<ion-col *ngFor="let partenaire of abaout.partenaires" width-25 >
+ <img [src]="partenaire.image" >
+</ion-col>
+</ion-row>
+</ion-grid>
+  </div>
+  <ion-item text-center>
+ <p><small>&copy; 2016 Realize inc. All rights reserved</small></p>   
+  </ion-item>
+</ion-content>

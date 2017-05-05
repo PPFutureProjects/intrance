@@ -1,0 +1,37 @@
+<!--
+  Generated template for the ConcoursOptions page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border no-shadow>
+  <ion-navbar>
+     <button menuToggle ion-button icon-only>
+      <ion-icon name="menu"></ion-icon>
+    </button>  
+    <ion-title>Détails</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content *ngIf="concours">
+  <div class="article-title"  text-wrap ion-item no-lines>
+  <h3>{{concours.nom}}</h3> 
+  <a>{{concours.ecole}}</a>  
+  <div class="action-icon"  item-left><span><ion-icon name="ios-school-outline"></ion-icon></span></div>
+  </div>
+<ion-list no-lines>
+  <div ion-item  class="content"  text-wrap>
+     <h2>Description du concours</h2>
+  <p> {{concours.descriptionConcours}}</p>
+  </div>
+<div ion-item  class="content" text-wrap>
+   <h2>Description de l'ecole</h2>
+   <p> {{concours.descriptionEcole}}</p>
+</div>
+</ion-list>
+<div padding>
+<button ion-button block outline color="primary" (click)="explorer()"> Explorer le programme</button>
+<br>
+<button ion-button block color="primary" (click)="inscrire()"> S'inscrire au programme</button>
+</div>
+<flash-card></flash-card>  
+</ion-content>

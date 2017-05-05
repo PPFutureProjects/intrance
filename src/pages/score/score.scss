@@ -1,0 +1,116 @@
+page-score {
+    ion-slide {
+       align-items: flex-start; 
+        background-color: transparent;
+       padding-bottom: 1px;
+       height: 100%;
+    }
+
+  .button-row{
+       background-color: map-get($colors, light);
+      ion-row{
+        align-items: top;
+        background-color: transparent;
+        height: 10%;
+        margin-top:-5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        
+    }
+  }
+  
+.popup-top{
+   background-color: map-get($colors, light);
+   top:-0%;
+   height: 160px;
+   width: 100%;
+   ion-item{
+     background-color: transparent;
+   }
+}
+  .button-item{
+          position: absolute;
+          display: inline-block;
+          width: 20%;
+              button {
+              font-weight: bold;
+              }
+        }
+   .question-time {
+                border: solid 2px color($colors, primary);
+                border-style:  solid ;
+                text-align: center;
+                vertical-align: middle;
+                padding: 5px;
+                height: 40px;
+                width: 40px;
+                border-radius:50%;  
+                font-size: 0.9em;  
+                color: color($colors, primary); 
+                font-weight: normal;
+
+        }
+    ion-item {
+      margin-bottom: 3px;
+      font-size: 1.2em;
+    }
+    .start-slide, .final-slide {
+      justify-content: center;
+      height: 100%;
+      button {
+      font-weight: normal;
+      }
+  
+    }
+
+     .question {
+        position: absolute;
+        text-align: center;
+        height: 100%;
+        top: 12%;
+        padding-left: 8%;
+      }
+     .propositions {
+       // padding-left: 10%;
+        height: 60%;
+      }      
+    .new-progress-bar {
+       left: 0;
+       width: 100%;
+       height: 6px;
+       border: 0px;
+    }
+    .correct {
+      color:map-get($colors, secondary);
+    }
+
+    .wrong  {
+      color: map-get($colors, danger);
+      text-decoration: line-through;
+    }
+    .score-row{
+       align-items: top;
+        position: absolute;
+        height: 26%;
+        padding-bottom: 60px;
+         top:12%;
+    }
+      .partie-note,.partie-time {
+        height: 93px;
+        width: 93px;
+        border-radius: 50%;
+        display:  inline-block;
+        padding: 0px;
+
+      } 
+      .partie-note div{                
+                 border: 6px  solid color($colors, primary);;
+                 border-style: double ;
+
+      }
+       .partie-time div{
+                 border: 6px  solid color($colors, secondary);;
+                 border-style: dotted  ;
+      }
+}
+

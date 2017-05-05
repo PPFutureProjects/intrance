@@ -1,0 +1,25 @@
+{
+    "contact": {
+        "telephone":"+237694210203", 
+        "email":"support@training.com",
+         "whatsapp":"+237694210203"},
+    "communautes": [
+      {
+        "titre": "Nous suivre sur facebook",
+        "link": "https://www.facebook.com/ETrust-1804291556519212/?fref=ts ",
+        "icon": "logo-facebook"
+      },
+
+        {
+      "titre": "Nous suivre sur yotube",
+        "link": "page youtube ",
+        "icon": "logo-youtube"
+      },
+       {
+        "titre": "www.training.com",
+        "link": "https://www.training.com ",
+        "icon": "globe"
+      }
+
+    ]    
+}

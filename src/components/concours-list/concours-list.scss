@@ -1,0 +1,35 @@
+concours-list {
+ion-item {
+ height: 9.3rem;
+ background-color: #f4f4f2;
+ position: relative;
+      img {
+         border-radius: 6px;
+        height: 100%;
+        max-width: 100%;
+      }
+       a{
+       height: 30px;
+       color:color($colors, primary);
+       font-size: 0.7em;
+       margin:6px;
+       padding-left: 2px;
+       padding-right: 2px;
+       border-radius:10%;  
+       border: 1px  solid color($colors, primary);
+    }
+    ion-icon{
+        color:  #7F7F7F;
+    }
+      p{
+       font-size: 1em;
+ 
+    } 
+  h2{
+       font-size: 1.8em;
+ 
+    } 
+
+  }
+
+}

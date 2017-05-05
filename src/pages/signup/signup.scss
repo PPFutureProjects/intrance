@@ -1,0 +1,40 @@
+page-signup {
+  .auth{
+     //   background-color: map-get($colors, primary);
+  //  background-image: linear-gradient(to bottom, color($colors,  primary), color($colors,  primary-clear));
+  }
+
+  form {
+    margin-bottom: 10px;
+    align-items: center;
+   
+   
+    button {
+      margin-top: 5px;
+    }
+  }
+
+  p {
+    font-size: 1.0em;
+    color: #7F7F7F;
+  }
+
+  ion-label {
+    margin: 5px;
+  }
+
+  ion-input {
+    line-height: 1.1em;
+    padding: 4px; 
+    color: #7F7F7F;
+  }
+
+  .invalid {
+    color: #FF6153;
+  }
+
+  .error-message .item-inner {
+    border-bottom: 0 !important;
+  }
+
+}

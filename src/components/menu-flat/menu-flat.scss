@@ -1,0 +1,31 @@
+menu-flat {
+ .menu-flat{  width: 100%;
+    text-align: center;
+    background-color: map-get($colors, primary);
+    margin-bottom: 3%;
+   .span-value{
+        height: 51px;
+        width: 51px;
+        border-radius: 15%;
+        display:  inline-block;
+        margin: 5%;
+         font-size: 2em;
+       // padding-top: 12%;
+         color:  white;
+         background-color: transparent;
+         border: 3px  solid white;
+    }
+     .span-title{
+        width: 64px;
+        font-size: 0.9em;
+         display:  inline-block;
+         margin: 1px;
+         padding-top: 1%;
+         color: white;
+         font-weight: bold;
+    }
+
+}
+ 
+}  
+

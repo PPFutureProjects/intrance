@@ -1,0 +1,26 @@
+<!--
+  Generated template for the ArticleDetails page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border no-shadow>
+  <ion-navbar>
+    <ion-title>Article</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content >
+   <div class="article-title"  text-wrap ion-item no-lines>
+  <h2>{{article.title}}</h2>  
+  <div class="action-icon"  item-left><span><ion-icon name="ios-bulb-outline"></ion-icon></span></div>
+  </div> 
+<ion-list no-lines>
+  <div ion-item  class="content"  text-wrap>
+  <p> {{article.introduction}}</p>
+  </div>
+<div ion-item  *ngFor="let con of article.content" class="content" text-wrap>
+   <h2>{{con.subtitle}}</h2>
+   <p> {{con.text}}</p>
+</div>
+</ion-list>
+</ion-content>

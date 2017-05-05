@@ -1,0 +1,67 @@
+<ion-header no-border no-shadow>
+  <ion-navbar>
+     <button menuToggle ion-button icon-only>
+      <ion-icon name="menu"></ion-icon>
+    </button>    
+    <ion-title>Connexion</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <div   class="action-description" text-wrap ion-item no-lines>
+    <div class="action-icon" item-left><span><ion-icon name="ios-key"></ion-icon></span></div>
+   <p>
+ Connectez-vous pous acceder à vos informations personnelles .     
+     </p> 
+  </div>
+  <form [formGroup]="loginForm" (submit)="loginUser()" novalidate padding>
+    <ion-item class="input-item">
+      <ion-label stacked></ion-label>
+      <ion-input #email formControlName="email" type="email"
+        placeholder="Your email address"
+        [class.invalid]="!loginForm.controls.email.valid &&
+          loginForm.controls.email.dirty"></ion-input>
+    </ion-item>
+    <ion-item class="error-message" *ngIf="!loginForm.controls.email.valid  &&
+      loginForm.controls.email.dirty" text-wrap>
+     <p>Veillez entrer une adresse mail valide.</p>
+    </ion-item>
+    <ion-item class="input-item">
+      <ion-label stacked></ion-label>
+      <ion-input #password formControlName="password" type="password"
+        placeholder="Your password"
+        [class.invalid]="!loginForm.controls.password.valid &&
+          loginForm.controls.password.dirty"></ion-input>
+    </ion-item>
+    <ion-item class="error-message" *ngIf="!loginForm.controls.password.valid  &&
+      loginForm.controls.password.dirty" text-wrap>
+      <p>Votre mot de passe doit avoir au moins 06 caractères</p>
+    </ion-item>
+<br>
+  <ion-row >
+     <ion-col>
+  <button ion-button block  color="light" (click)="createAccount()">
+    Créer un compte
+  </button>
+  </ion-col>
+  <ion-col>
+    <button ion-button block  type="submit">
+      Connexion
+    </button>
+    </ion-col>
+</ion-row>
+  <button ion-button block clear (click)="goToResetPassword()"  color="secondary">
+    Mot de passe oublié
+  </button> 
+  <br>
+   <button ion-button block color="facebook"  icon-left class="facebook-btn" (click)="registerUserWithFacebook()">
+    <ion-icon name="logo-facebook"></ion-icon>
+     Se connecter avec facebook
+  </button>
+  <button ion-button block color="google"  icon-left class="google-btn" (click)="registerUserWithGoogle()">
+    <ion-icon name="logo-google" ></ion-icon>
+      Se connecter avec google
+  </button> 
+
+  </form>
+
+</ion-content>

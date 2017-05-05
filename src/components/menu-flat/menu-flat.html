@@ -1,0 +1,18 @@
+<!--
+  Generated template for the MenuFlat component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+<div class="menu-flat">
+  <ion-grid>
+      <ion-row wrap>
+     <ion-col width-33 *ngFor="let p of appPages" > 
+       <button class="span-value" only-icon (click)="openPage(p)"><ion-icon [name]="p.icon"></ion-icon></button>
+       <br>
+       <span class="span-title">{{p.title}}</span>
+     </ion-col>
+     </ion-row>
+     </ion-grid>      
+</div>
+

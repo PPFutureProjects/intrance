@@ -1,0 +1,45 @@
+
+<ion-header no-shadow no-border>
+  <ion-navbar>
+      <button menuToggle ion-button icon-only>
+      <ion-icon name="menu"></ion-icon>
+    </button>   
+    <ion-title>Programme</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content >
+<div class="article-title"  ion-item no-lines (click)="showOptions()"  *ngIf="concours" class="article-title" >
+  <h3> {{concours.nom}}</h3>
+  <div class="action-icon"  item-left><span><ion-icon name="md-school"></ion-icon></span></div> 
+   <a> {{concours.ecole}}</a>
+</div>  
+<div  ion-item no-lines text-wrap class="dasboard"> 
+<dashboord-item [authInfo]="authInfo" [analyse]="analyse" [concours]="concours"></dashboord-item>
+</div>
+<div   ion-item no-lines text-wrap>
+  <ion-row >
+  <ion-col><button ion-button block color="danger" (click)="dismiss()" outline small  > <span>Retour</span></button> </ion-col>
+  <ion-col><button ion-button  block color="primary" (click)="inscrire()" small> S'inscrire</button></ion-col>
+</ion-row>
+    <ion-segment [(ngModel)]="categorie">
+      <ion-segment-button value="prepa">
+        Travaux dirigés
+      </ion-segment-button>
+      <ion-segment-button value="epreuve">
+       Ancienes epreuves
+      </ion-segment-button>
+    </ion-segment>
+ <br>
+  <ion-list *ngIf="concours" class="borded-list-item">
+     <ion-item text-wrap (click)="show(matiere)" *ngFor="let matiere of concours.matieres" [hidden]="categorie!=matiere.categorie" [ngClass]="getClass(matiere)">
+        <ion-icon name="lock" item-right *ngIf="!matiere.parties.length" class="lock-icon"></ion-icon>
+      <ion-thumbnail item-left>
+        <img src="assets/images/chimie.jpg">
+      </ion-thumbnail>
+      {{matiere.titre}}
+      <p>{{matiere.description}}</p>
+    </ion-item>
+  </ion-list>
+</div>
+<flash-card></flash-card>  
+</ion-content>
